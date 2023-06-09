@@ -1,7 +1,61 @@
 # Concrete Crack Detection
-This repository contains the code and resources for a machine learning project focused on concrete crack detection. The goal of this project is to develop an image classification model that can accurately classify concrete images as cracked or non-cracked. Detecting and identifying concrete cracks is crucial for ensuring the safety and durability of buildings.
+## Project Description
+This repository contains the code and resources for a machine learning project focused on concrete crack detection. The project aims to develop an image classification model to classify concrete images into two categories: "With Cracks" and "Without Cracks". By accurately identifying concrete cracks, this AI-based solution can help prevent potential risks to building safety and durability. The project utilizes a dataset obtained from Mendeley and follows a machine learning workflow from problem formulation to model deployment.
 ## Dataset
 The dataset used for this project can be found at the following link: https://data.mendeley.com/datasets/5y9wdsg2zt/2
+## Project Functionality
+- Performs image classification to identify concrete cracks.
+- Addresses various types of concrete cracks, including hairline cracks, shrinkage cracks, settlement cracks, and structural cracks.
+- Ensures model accuracy, avoiding overfitting.
+- Applies transfer learning to leverage pre-trained models.
+- Presents a well-structured and presentable project on GitHub.
+- Deploys the model to make predictions on test data.
+## Challenges and Solutions
+### Challenge: 
+Dataset collection and preprocessing.
+### Solution:
+Obtained the concrete crack dataset from Mendeley and performed necessary preprocessing steps to prepare the data for model training.
+### Challenge: 
+Model accuracy and overfitting prevention.
+### Solution:
+Implemented transfer learning and regularization techniques to achieve training and validation accuracy of more than 90% while preventing overfitting.
+### Future Implementations
+- Implement a web application to allow users to upload images and classify concrete cracks in real-time.
+- Enhance the model's performance by exploring advanced deep learning architectures and techniques.
+- Develop a mobile application to enable on-the-go concrete crack identification.
+## Installation and Usage
+### 1. Clone the repository to your local machine using the following command:
+```shell
+git clone https://github.com/farah2p/farah-capstone2-ecommerce-text.git
+```
+### 2. Before running the code, ensure that you have the following dependencies installed:
+- TensorFlow
+- Pandas 1.5.3
+- Matplotlib
+- Tensorboard 2.12.3
+
+Install the required dependencies by running the following command:
+```shell
+pip install tensorflow==2.12.0
+pip install numpy==1.24.2
+pip install matplotlib==3.7.1
+pip install pandas==1.5.3
+pip install tensorboard===2.12.3
+```
+### 3. Download the dataset from https://data.mendeley.com/datasets/5y9wdsg2zt/2 and place it in the project directory.
+### 4. Open the Jupyter Notebook or Python script containing the code.
+### 5. Run the code cells or execute the script to perform the following tasks:
+- Preprocess the concrete images for training and evaluation.
+- Develop the image classification model using deep learning techniques.
+- Train the model, ensuring accuracy and preventing overfitting.
+- Evaluate the model using validation data.
+- Deploy the trained model to make predictions on the test dataset.
+### 6. Use Tensorboard to visualize the model graph and training progress by running the following command in the project directory:
+```shell
+tensorboard --logdir tensorboard_logs/capstone3
+```
+Access Tensorboard in your web browser using the provided URL.
+### 7. The trained model will be saved in the h5 and pkl format as capstone3_model.h5 and capstone3_model.pkl, respectively
 ## Workflow
 The machine learning workflow for this project can be divided into the following stages:
 ### 1) Problem Formulation
