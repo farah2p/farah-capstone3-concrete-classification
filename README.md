@@ -26,7 +26,7 @@ Implemented transfer learning and regularization techniques to achieve training 
 ## Installation and Usage
 ### 1. Clone the repository to your local machine using the following command:
 ```shell
-git clone https://github.com/farah2p/farah-capstone2-ecommerce-text.git
+git clone https://github.com/farah2p/farah-capstone3-concrete-classification.git
 ```
 ### 2. Before running the code, ensure that you have the following dependencies installed:
 - TensorFlow
