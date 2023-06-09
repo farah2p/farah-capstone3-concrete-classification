@@ -28,7 +28,7 @@ The objective of this project is to develop a machine learning model that can ac
 - Ensure that the data distribution is balanced between the cracked and non-cracked classes in both the training and validation sets. This helps prevent bias in the model's performance.
 
 NOTES: It's important to note that the specific preprocessing and augmentation techniques used may vary depending on the characteristics of the concrete crack dataset and the requirements of the model. Experimentation and exploration of the data are essential to determine the most effective preprocessing steps and augmentation strategies for this project.
-#### 3) Model Development
+### 3) Model Development
 Train an image classification model using deep learning techniques. Transfer learning was applied to improve performance. In the model development stage of the concrete crack classification project, train an image classification model using deep learning techniques. Transfer learning can be employed to enhance the model's performance by leveraging pre-trained models. Here's an outline of the steps involved:
 Selecting a Deep Learning Framework:
 - Choose a deep learning framework such as TensorFlow, PyTorch, or Keras that supports building and training convolutional neural networks (CNNs).
@@ -56,7 +56,7 @@ Fine-tuning (Optional):
 - Fine-tuning can help the model capture more specific features relevant to concrete cracks.
 
 NOTES: By employing deep learning techniques and leveraging pre-trained models, you can benefit from the transfer of learned features and accelerate the model's training and performance. Remember to experiment with different architectures, hyperparameters, and fine-tuning strategies to achieve the desired accuracy and generalization capability for concrete crack classification.
-#### 4) Model Deployment
+### 4) Model Deployment
 In the model deployment stage of the concrete crack classification project, deploy the trained model and utilize it to make predictions on the test data. Here's an overview of the steps involved:
 Saving the Trained Model:
 - After training and evaluating the model, save the trained model's architecture and weights to disk.
