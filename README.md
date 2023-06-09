@@ -15,16 +15,21 @@ The objective of this project is to develop a machine learning model that can ac
 - By completing this project successfully, the model developed will have the potential to save lives, prevent accidents, and contribute to the long-term durability of buildings and infrastructure.
 ### 2) Data Preparation
 #### Preprocessing:
-- Load the concrete crack dataset, which consists of images labeled as cracked or non-cracked.
+- Load the concrete crack dataset, which consists of images labeled as cracked or non-cracked. The dataset is organized into the Positive and Negative folders, respectively.
 - Perform any necessary preprocessing steps, such as resizing the images to a consistent resolution.
 #### Splitting into Training and Validation Sets:
-- Divide the dataset into training and validation sets. A typical split could be 80% for training and 20% for validation.
+- To divide the dataset, you can use the following approach:
+  - Split the dataset into training, validation, and test sets. A typical split could be 70% for training, 20% for validation, and 10% for testing.
+  - Determine the size of each set by calculating the respective percentages based on the total size of the dataset. For example, if the dataset contains 100 samples:
+  Training set size: 70% of 100 = 70 samples
+  Validation set size: 20% of 100 = 20 samples
+  Test set size: 10% of 100 = 10 samples
+- You can adjust these percentages according to your specific requirements.
 - Ensure that the data distribution is balanced between the cracked and non-cracked classes in both the training and validation sets. This helps prevent bias in the model's performance.
 
-NOTES: It's important to note that the specific preprocessing and augmentation techniques used may vary depending on the characteristics of the concrete crack dataset and the requirements of the model. Experimentation and exploration of the data are essential to determine the most effective preprocessing steps and augmentation strategies for your project
+NOTES: It's important to note that the specific preprocessing and augmentation techniques used may vary depending on the characteristics of the concrete crack dataset and the requirements of the model. Experimentation and exploration of the data are essential to determine the most effective preprocessing steps and augmentation strategies for this project.
 #### 3) Model Development
-Train an image classification model using deep learning techniques. Transfer learning was applied to improve performance.
-In the model development stage of the concrete crack classification project, train an image classification model using deep learning techniques. Transfer learning can be employed to enhance the model's performance by leveraging pre-trained models. Here's an outline of the steps involved:
+Train an image classification model using deep learning techniques. Transfer learning was applied to improve performance. In the model development stage of the concrete crack classification project, train an image classification model using deep learning techniques. Transfer learning can be employed to enhance the model's performance by leveraging pre-trained models. Here's an outline of the steps involved:
 Selecting a Deep Learning Framework:
 - Choose a deep learning framework such as TensorFlow, PyTorch, or Keras that supports building and training convolutional neural networks (CNNs).
 - Install the necessary libraries and set up the development environment.
@@ -75,3 +80,17 @@ Handling New Images:
 - Utilize the loaded model to make predictions on the new images, providing real-time concrete crack detection.
 
 NOTES: By deploying the trained model and utilizing it for predictions on the test data, you can evaluate its performance on unseen samples and verify its effectiveness in concrete crack classification. Additionally, extending the deployment to handle new images allows for practical and real-world usage of the model to aid in concrete crack detection.
+## Criteria
+To successfully complete this project, the following criteria should be met:
+- Achieve a training and validation accuracy of more than 90%.
+- Ensure the model is not overfitting by monitoring the training and validation loss.
+- Apply transfer learning techniques to leverage pre-trained models.
+- Use the provided dataset mentioned in the README. Do not upload the data onto GitHub.
+- Present the entire project in a presentable manner, adhering to good coding practices:
+- Use proper variable naming conventions.
+- Write concise comments to improve code readability.
+## Credits
+The dataset used in this project is sourced from:
+https://data.mendeley.com/datasets/5y9wdsg2zt/2
+## Contributing
+Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the GitHub repository.
