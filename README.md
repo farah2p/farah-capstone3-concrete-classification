@@ -1,8 +1,11 @@
 # Concrete Crack Detection
+
 ## Project Description
 This repository contains the code and resources for a machine learning project focused on concrete crack detection. The project aims to develop an image classification model to classify concrete images into two categories: "With Cracks" and "Without Cracks". By accurately identifying concrete cracks, this AI-based solution can help prevent potential risks to building safety and durability. The project utilizes a dataset obtained from Mendeley and follows a machine learning workflow from problem formulation to model deployment.
+
 ## Dataset
 The dataset used for this project can be found at the following link: https://data.mendeley.com/datasets/5y9wdsg2zt/2
+
 ## Project Functionality
 - Performs image classification to identify concrete cracks.
 - Addresses various types of concrete cracks, including hairline cracks, shrinkage cracks, settlement cracks, and structural cracks.
@@ -10,19 +13,30 @@ The dataset used for this project can be found at the following link: https://da
 - Applies transfer learning to leverage pre-trained models.
 - Presents a well-structured and presentable project on GitHub.
 - Deploys the model to make predictions on test data.
+
 ## Challenges and Solutions
-### Challenge: 
-Dataset collection and preprocessing.
-### Solution:
-Obtained the concrete crack dataset from Mendeley and performed necessary preprocessing steps to prepare the data for model training.
-### Challenge: 
-Model accuracy and overfitting prevention.
-### Solution:
-Implemented transfer learning and regularization techniques to achieve training and validation accuracy of more than 90% while preventing overfitting.
-### Future Implementations
+### During the project development, some of the challenges encountered were:
+- Limited availability of labeled concrete crack images
+- Dealing with imbalanced datasets
+- Optimizing the model architecture and hyperparameters for accurate classification
+
+### To address these challenges, various strategies were implemented, such as:
+- Curating and augmenting the available dataset to increase the number of crack samples
+- Applying data augmentation techniques to enhance model generalization
+- Employing transfer learning using pre-trained models to leverage their feature extraction capabilities
+- Fine-tuning the model for better performance on concrete crack classification
+
+## Future Implementations
 - Implement a web application to allow users to upload images and classify concrete cracks in real-time.
 - Enhance the model's performance by exploring advanced deep learning architectures and techniques.
 - Develop a mobile application to enable on-the-go concrete crack identification.
+
+## Requirements and Dependencies
+- TensorFlow
+- Keras
+- NumPy
+- Matplotlib
+
 ## Installation and Usage
 ### 1. Clone the repository to your local machine using the following command:
 ```shell
@@ -56,6 +70,7 @@ tensorboard --logdir tensorboard_logs/capstone3
 ```
 Access Tensorboard in your web browser using the provided URL.
 ### 7. The trained model will be saved in the h5 and pkl format as capstone3_model.h5 and capstone3_model.pkl, respectively
+
 ## Workflow
 The machine learning workflow for this project can be divided into the following stages:
 ### 1) Problem Formulation
@@ -134,6 +149,7 @@ Handling New Images:
 - Utilize the loaded model to make predictions on the new images, providing real-time concrete crack detection.
 
 NOTES: By deploying the trained model and utilizing it for predictions on the test data, you can evaluate its performance on unseen samples and verify its effectiveness in concrete crack classification. Additionally, extending the deployment to handle new images allows for practical and real-world usage of the model to aid in concrete crack detection.
+
 ## Criteria
 To successfully complete this project, the following criteria should be met:
 - Achieve a training and validation accuracy of more than 90%.
@@ -143,6 +159,7 @@ To successfully complete this project, the following criteria should be met:
 - Present the entire project in a presentable manner, adhering to good coding practices:
 - Use proper variable naming conventions.
 - Write concise comments to improve code readability.
+
 ## Output of the Project
 After training the concrete crack detection model using different epochs, the following results were obtained:
 ### Initial Training Phase (Epochs)
@@ -168,6 +185,7 @@ Overall, both the initial training and fine-tuning phases yielded outstanding re
 - Accuracy: 0.5881
 
 During the initial evaluation before training, the model was tested on a dataset to assess its performance. The obtained loss of 0.6694 indicates the average discrepancy between the model's predictions and the true labels, while the accuracy of 0.5881 represents the percentage of correct classifications. These results show that the model's initial performance was not satisfactory, with a relatively high loss and moderate accuracy.
+
 ## Evaluation after Training
 - Test Loss: 0.0044
 - Test Accuracy: 0.9975
@@ -200,5 +218,6 @@ Below are some sample visualizations generated by the project:
 ## Credits
 The dataset used in this project is sourced from:
 https://data.mendeley.com/datasets/5y9wdsg2zt/2
+
 ## Contributing
 Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the GitHub repository.
