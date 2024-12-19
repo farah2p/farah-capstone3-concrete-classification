@@ -127,7 +127,7 @@ Fine-tuning (Optional):
 NOTES: By employing deep learning techniques and leveraging pre-trained models, you can benefit from the transfer of learned features and accelerate the model's training and performance. Remember to experiment with different architectures, hyperparameters, and fine-tuning strategies to achieve the desired accuracy and generalization capability for concrete crack classification.
 ### 4) Model Deployment
 In the model deployment stage of the concrete crack classification project, deploy the trained model and utilize it to make predictions on the test data. Here's an overview of the steps involved:
-Saving the Trained Model:
+- Saving the trained model.
 - After training and evaluating the model, save the trained model's architecture and weights to disk.
 - This ensures that the model can be loaded and used for predictions without retraining.
 Loading the Trained Model:
